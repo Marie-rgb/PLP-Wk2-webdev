@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .masonry-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+        }
+
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 16px;
+        }
+
+        .masonry-item img {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 40px 20px 0 20px;
+        }
+
+        .heading {
+            width: 50%;
+            padding-bottom: 50px;
+        }
+
+        .heading h3 {
+            font-size: 3em;
+            font-weight: bolder;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #222;
+        }
+
+        .heading h3 span {
+            font-weight: 100;
+
+        }
+    </style>
+    <title>gallery</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3>Nature<span>Gallery</span></h3>
+        </div>
+    </div>
+    <div class="masonry-container">
+        <div class="masonry-item"><img src="images/trees.jpg" alt="Image 1"></div>
+        <div class="masonry-item"><img src="images/flowerytree.jpg" alt="Image 2"></div>
+        <div class="masonry-item"><img src="images/grass.jpg" alt="Image 3"></div>
+        <div class="masonry-item"><img src="images/soil.jpg" alt="Image 4"></div>
+        <div class="masonry-item"><img src="images/sea.jpg" alt="Image 5"></div>
+        <div class="masonry-item"><img src="images/singletree.jpg" alt="Image 5"></div>
+        <div class="masonry-item"><img src="images/img1.jpg" alt="Image 5"></div>
+        <div class="masonry-item"><img src="images/img2.jpg" alt="Image 5"></div>
+    </div>
+
+</body>
+
+</html>
